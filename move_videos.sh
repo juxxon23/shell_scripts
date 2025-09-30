@@ -9,6 +9,13 @@ function create_dirs() {
     mkdir $dir_root
     mkdir $dir_hori
     mkdir $dir_vert
+  else
+    if [ ! -d "$dir_hori" ]; then 
+      mkdir $dir_hori
+    fi
+    if [ ! -d "$dir_vert" ]; then 
+      mkdir $dir_vert
+    fi
   fi
 }
 
